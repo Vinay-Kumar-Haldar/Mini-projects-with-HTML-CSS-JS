@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  
+<body class="bg-gray-900 min-h-screen flex items-center justify-center">
+  <div class="calculator">
+    <!-- <div class="display" id="display">0</div> -->
+     <input type="text" name="" placeholder="0" id="display" value="0" readonly>
+    <div class="buttons row1">
+      <button class="ac btn" onclick="clearDisplay()">AC</button>
+      <button class="btn special" onclick="appendToDisplay('(')">(</button>
+      <button class="btn special" onclick="appendToDisplay(')')">)</button>
+      <button class="btn special" onclick="appendToDisplay('sqrt(')">√</button>
+      </div>
+          <div class="buttons row2">
+      <button class="btn num" onclick="appendToDisplay('7')">7</button>
+      <button class="btn num" onclick="appendToDisplay('8')">8</button>
+      <button class="btn num" onclick="appendToDisplay('9')">9</button>
+      <button class="btn op" onclick="appendToDisplay('/')">/</button>
+          </div>
+          <div class="buttons row3">
+      <button class="btn num" onclick="appendToDisplay('4')">4</button>
+      <button class="btn num" onclick="appendToDisplay('5')">5</button>
+      <button class="btn num" onclick="appendToDisplay('6')">6</button>
+      <button class="btn op" onclick="appendToDisplay('*')">*</button>
+      </div>
+          <div class="buttons row4">
+      <button class="btn num" onclick="appendToDisplay('1')">1</button>
+      <button class="btn num" onclick="appendToDisplay('2')">2</button>
+      <button class="btn num" onclick="appendToDisplay('3')">3</button>
+      <button class="btn op" onclick="appendToDisplay('-')">-</button>
+      </div>
+          <div class="buttons row5">
+
+      <button class="btn num zero" onclick="appendToDisplay('0')">0</button>
+      <button class="btn num" onclick="appendToDisplay('.')">.</button>
+      <button class="btn op" onclick="appendToDisplay('+')">+</button>
+      <button class="btn special" onclick="appendToDisplay('%')">%</button>
+          </div>
+        <div class="buttons row6">
+      <button class="btn backspace" onclick=" Backspace()">X</button>
+      <button class="btn equal" id= equalbtn onclick="calculate()">=</button>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
